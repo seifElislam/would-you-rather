@@ -9,6 +9,8 @@ import Home from './components/Home';
 import Nav from './components/Nav';
 import PollCard from './components/PollCard';
 import NewPoll from './components/newPoll';
+import Leaderboard from './components/Leaderboard';
+import NotFound from './components/notFound';
 
 class App extends Component {
   componentDidMount() {
@@ -33,9 +35,11 @@ class App extends Component {
                 <ContentGrid>
                   <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route path="/questions/notfound" component={NotFound} />
                     <Route path="/questions/:question_id" component={PollCard} />
                     <Route path="/add" component={NewPoll} />
                     <Route path="/leaderboard" component={Leaderboard} />
+                    <Route component={NotFound} />
                   </Switch>
                 </ContentGrid>
               </Fragment>
