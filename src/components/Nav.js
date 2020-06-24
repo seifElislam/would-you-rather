@@ -25,6 +25,7 @@ class Nav extends Component {
         <Responsive as={Menu} minWidth={651} pointing secondary>
           <Menu.Item name="home" as={NavLink} to="/" exact />
           <Menu.Item name="new poll" as={NavLink} to="/add" />
+          <Menu.Item name="leader board" as={NavLink} to="/leaderboard" />
           <Menu.Menu position="right">
             <Menu.Item>
               <span>Hello, {users[authUser].name}</span>
@@ -77,6 +78,7 @@ class Nav extends Component {
                 <Menu pointing secondary widths={3}>
                   <Menu.Item name="home" as={NavLink} to="/" exact />
                   <Menu.Item name="new poll" as={NavLink} to="/add" />
+                  <Menu.Item name="leader board" as={NavLink} to="/leaderboard" />
                 </Menu>
               </Grid.Column>
             </Grid.Row>
@@ -110,6 +112,7 @@ class Nav extends Component {
                 <Menu pointing secondary widths={3}>
                   <Menu.Item name="home" as={NavLink} to="/" exact />
                   <Menu.Item name="new poll" as={NavLink} to="/add" />
+                  <Menu.Item name="leader board" as={NavLink} to="/leaderboard" />
                 </Menu>
               </Grid.Column>
             </Grid.Row>
