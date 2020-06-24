@@ -29,7 +29,7 @@ const PollContent = props => {
   }
 };
 
-export class UserCard extends Component {
+export class PollCard extends Component {
   static propTypes = {
     question: PropTypes.object,
     author: PropTypes.object,
@@ -47,7 +47,7 @@ export class UserCard extends Component {
     } = this.props;
 
     if (badPath === true) {
-      return <Redirect to="/questions/bad_id" />;
+      return <Redirect to="/questions/notfound" />;
     }
 
     const tabColor = unanswered === true ? colors.green : colors.blue;
@@ -123,4 +123,4 @@ function mapStateToProps(
   };
 }
 
-export default connect(mapStateToProps)(UserCard);
+export default connect(mapStateToProps)(PollCard);
