@@ -1,7 +1,7 @@
 export const colors = {
     green: {
-      name: 'green',
-      hex: '#7BB31A'
+      name: 'orange',
+      hex: '#fbbd08'
     },
     blue: {
       name: 'blue',
@@ -15,8 +15,8 @@ export const colors = {
   
   export const styles = {
     primary: {
-      color: 'green',
-      bgColor: 'honeydew'
+      color: 'orange',
+      bgColor: '#f2711c'
     },
     secondary: {
       color: 'grey',
