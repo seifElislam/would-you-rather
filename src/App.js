@@ -7,6 +7,7 @@ import './App.css';
 import Login from './components/Login';
 import Home from './components/Home';
 import Nav from './components/Nav';
+import PollCard from './components/PollCard';
 
 class App extends Component {
   componentDidMount() {
@@ -31,6 +32,7 @@ class App extends Component {
                 <ContentGrid>
                   <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route path="/questions/:question_id" component={PollCard} />
                   </Switch>
                 </ContentGrid>
               </Fragment>
