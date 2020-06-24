@@ -5,7 +5,6 @@ import {
   Segment,
   Grid,
   Header,
-  Image,
   Form,
   Loader,
   Dimmer
@@ -99,7 +98,7 @@ class LoginForm extends Component {
 
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Header as="h2" color="green">
+        <Header as="h2" color="orange">
           Sign In
         </Header>
         <Form.Dropdown
